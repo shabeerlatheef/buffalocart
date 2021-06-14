@@ -27,6 +27,9 @@ public class HomePage {
 	public WebElement bugsTab;
 	
 	
+	@FindBy(xpath="//a[@title='Client']")
+	public WebElement clientTab;
+	
 	public void userClick()
 	{
 		UserTab.click();
@@ -41,10 +44,14 @@ public class HomePage {
 	public void searchmenu(String items) {
 		searchmenu.sendKeys(items);
 		
-		Screenshots.takeScreenShotInApp(driver, "search_Menu_" +items);
+		Screenshots.takeScreenShotInApp(driver, "search_menu_" +items);
 		
 	}
 	
+	public void clientClick()
+	{
+		clientTab.click();
+	}
 	
 	
 	

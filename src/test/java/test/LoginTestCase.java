@@ -19,6 +19,7 @@ import pages.LoginPage;
 import pages.UserProfilePage;
 import pages.AllUserPage;
 import pages.BugsPage;
+import pages.ClientListPage;
 import pages.CreateNewbugPage;
 import pages.CreateUserPage;
 
@@ -44,7 +45,7 @@ public class LoginTestCase {
 	@AfterSuite
     public void quit()
     {
-       driver.quit();
+       //driver.quit();
         System.out.println("quit the browser");
     }
 	
@@ -122,6 +123,17 @@ public class LoginTestCase {
 			bug.enterbugtitle("test");
 			bug.selectRelatedto();
 			bug.clickSave();
+		}
+		
+		@Test
+		public void clientsearch()
+		{
+			HomePage clientmenu = new HomePage(driver);
+			clientmenu.searchmenu("Client");
+			clientmenu.clientClick();
+			
+			ClientListPage client = new ClientListPage(driver);
+			client.clientList();
 		}
 	
 	

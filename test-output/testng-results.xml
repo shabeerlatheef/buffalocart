@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-14T04:09:22Z" name="Default suite" finished-at="2021-06-14T04:10:35Z" duration-ms="72765">
+  <suite started-at="2021-06-14T19:23:57Z" name="Default suite" finished-at="2021-06-14T19:25:00Z" duration-ms="62463">
     <groups>
     </groups>
-    <test started-at="2021-06-14T04:09:22Z" name="Default test" finished-at="2021-06-14T04:10:35Z" duration-ms="72765">
+    <test started-at="2021-06-14T19:23:57Z" name="Default test" finished-at="2021-06-14T19:25:00Z" duration-ms="62463">
       <class name="test.LoginTestCase">
-        <test-method is-config="true" signature="browsersetup()[pri:0, instance:test.LoginTestCase@1fb19a0]" started-at="2021-06-14T04:09:21Z" name="browsersetup" finished-at="2021-06-14T04:09:22Z" duration-ms="1604" status="PASS">
+        <test-method is-config="true" signature="browsersetup()[pri:0, instance:test.LoginTestCase@75d2da2d]" started-at="2021-06-14T19:23:56Z" name="browsersetup" finished-at="2021-06-14T19:23:57Z" duration-ms="1670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browsersetup -->
-        <test-method is-config="true" signature="appsetup()[pri:0, instance:test.LoginTestCase@1fb19a0]" started-at="2021-06-14T04:09:22Z" name="appsetup" finished-at="2021-06-14T04:09:24Z" duration-ms="1764" status="PASS">
+        <test-method is-config="true" signature="appsetup()[pri:0, instance:test.LoginTestCase@75d2da2d]" started-at="2021-06-14T19:23:57Z" name="appsetup" finished-at="2021-06-14T19:24:00Z" duration-ms="2135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appsetup -->
-        <test-method is-config="true" signature="loginTest()[pri:0, instance:test.LoginTestCase@1fb19a0]" started-at="2021-06-14T04:09:24Z" name="loginTest" finished-at="2021-06-14T04:09:29Z" duration-ms="5364" status="PASS">
+        <test-method is-config="true" signature="loginTest()[pri:0, instance:test.LoginTestCase@75d2da2d]" started-at="2021-06-14T19:24:00Z" name="loginTest" finished-at="2021-06-14T19:24:05Z" duration-ms="5194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="deleteuser()[pri:0, instance:test.LoginTestCase@1fb19a0]" started-at="2021-06-14T04:09:29Z" name="deleteuser" finished-at="2021-06-14T04:09:56Z" duration-ms="26361" status="PASS">
+        <test-method signature="clientsearch()[pri:0, instance:test.LoginTestCase@75d2da2d]" started-at="2021-06-14T19:24:05Z" name="clientsearch" finished-at="2021-06-14T19:25:00Z" duration-ms="55113" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteuser -->
-        <test-method signature="searchMenuItems()[pri:0, instance:test.LoginTestCase@1fb19a0]" started-at="2021-06-14T04:09:56Z" name="searchMenuItems" finished-at="2021-06-14T04:10:18Z" duration-ms="22119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchMenuItems -->
-        <test-method signature="userTest()[pri:0, instance:test.LoginTestCase@1fb19a0]" started-at="2021-06-14T04:10:18Z" name="userTest" finished-at="2021-06-14T04:10:35Z" duration-ms="17132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userTest -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:test.LoginTestCase@1fb19a0]" started-at="2021-06-14T04:10:35Z" name="quit" finished-at="2021-06-14T04:10:36Z" duration-ms="681" status="PASS">
+        </test-method> <!-- clientsearch -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:test.LoginTestCase@75d2da2d]" started-at="2021-06-14T19:25:00Z" name="quit" finished-at="2021-06-14T19:25:00Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
