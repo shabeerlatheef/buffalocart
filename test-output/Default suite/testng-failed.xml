@@ -6,7 +6,7 @@
       <class name="test.LoginTestCase">
         <methods>
           <include name="appsetup"/>
-          <include name="userTest"/>
+          <include name="searchMenuItems"/>
           <include name="browsersetup"/>
           <include name="loginTest"/>
           <include name="quit"/>

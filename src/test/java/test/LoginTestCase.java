@@ -18,6 +18,8 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.UserProfilePage;
 import pages.AllUserPage;
+import pages.BugsPage;
+import pages.CreateNewbugPage;
 import pages.CreateUserPage;
 
 public class LoginTestCase {
@@ -102,6 +104,24 @@ public class LoginTestCase {
 			alluser.deletebutton();
 			
 			
+		}
+		
+		
+		@Test
+		public void searchMenuItems() throws InterruptedException
+		{
+			HomePage menuitems = new HomePage(driver);
+			menuitems.searchmenu("Bugs");
+			menuitems.bugsClick();
+			
+			BugsPage newbug = new BugsPage(driver);
+			Thread.sleep(5000);
+			newbug.clickNewBug();
+			
+			CreateNewbugPage bug = new CreateNewbugPage(driver);
+			bug.enterbugtitle("test");
+			bug.selectRelatedto();
+			bug.clickSave();
 		}
 	
 	
