@@ -7,14 +7,14 @@ import org.testng.annotations.BeforeSuite;
 
 public class BaseSetup {
 	
-	WebDriver driver;
+WebDriver driver;
 	
 	@BeforeSuite
-	public void setup()
+	public void browsersetup()
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://buffalocart.com/demo/erp/login");
+		
 	}
 	
 	@AfterSuite

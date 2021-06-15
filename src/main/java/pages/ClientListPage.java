@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -29,20 +30,27 @@ WebDriver driver;
 		for (WebElement client:clients)
 		{
 			System.out.println(client.getText());
-			/*
+			
 			if(client.getText().contains("Obsqura"))
 			{
-				client.click();
+				//client.click();
+				
+				String selectLinkOpeninNewTab = Keys.chord(Keys.CONTROL,Keys.RETURN); 
+				client.sendKeys(selectLinkOpeninNewTab);
+				
+				
 				driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 				WebElement clientname = driver.findElement(By.xpath("//div[@class='col-md-6']//div[@class='col-md-6']"));
 				System.out.println(clientname.getText());
 				driver.navigate().back();
-				*/
+				
 			}
 			
 		
 	}
 	
-	
-	
+	}
 }
+	
+	
+
