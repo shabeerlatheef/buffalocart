@@ -20,7 +20,7 @@ WebDriver driver;
 	@AfterSuite
     public void quit()
     {
-       driver.quit();
+        //driver.quit();
         System.out.println("quit the browser");
     }
 

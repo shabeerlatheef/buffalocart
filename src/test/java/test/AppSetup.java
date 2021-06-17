@@ -19,5 +19,9 @@ public class AppSetup extends BaseSetup {
         driver.quit();
         System.out.println("quit the browser");
     }
+	
+	
+	
+	
 
 }

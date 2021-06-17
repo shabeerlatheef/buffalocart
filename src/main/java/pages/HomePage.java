@@ -35,6 +35,10 @@ public class HomePage {
 	@FindBy(xpath="//a[@title='Client']")
 	public WebElement clientTab;
 	
+	@FindBy(xpath="//a[@title='File Manager']")
+	public WebElement fileManagerTab;
+	
+	
 	public void userClick()
 	{
 		UserTab.click();
@@ -63,6 +67,13 @@ public class HomePage {
 		
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Client']")));
+		
+	}
+
+	public void fileManagerClick()
+	{
+		fileManagerTab.click();
+		
 		
 	}
 	
