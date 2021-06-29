@@ -56,7 +56,7 @@ public class HomePage {
 		searchmenu.sendKeys(items);
 		
 		
-		Screenshots.takeScreenShotInApp(driver, "search_menu_" +items);
+		Screenshots.takeScreenshots(driver, "search_menu_" +items);
 		
 	}
 	

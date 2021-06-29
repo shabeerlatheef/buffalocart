@@ -34,7 +34,7 @@ public class UserPageTestCase extends LoginPageTestCase {
 	createUser.enterEmail("shabeerlatheef@gmail.com");
 	createUser.selectLocale("Malayalam (India)");
 	createUser.selectAdmin("Admin");
-	createUser.uploadImage("E:\\java program\\image\\image.JPG");
+	createUser.uploadImg("E:\\java program\\image\\image.JPG");
 	createUser.selectDesignation("Manager");
 	createUser.submitCreateUserbutton();
 	

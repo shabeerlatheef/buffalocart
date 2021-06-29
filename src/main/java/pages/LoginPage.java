@@ -26,11 +26,13 @@ public class LoginPage {
 	public void enterUsername(String username)
 	{
 		loginUserName.sendKeys(username);
+		System.out.println(username);
 	}
 	
 	public void enterPassword(String password)
 	{
 		loginPassword.sendKeys(password);
+		System.out.println(password);
 	}
 	
 	public void clickSignInButton()

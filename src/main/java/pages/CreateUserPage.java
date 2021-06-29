@@ -10,6 +10,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import utils.UploadImage;
+
 public class CreateUserPage {
 	
 	WebDriver driver;
@@ -131,12 +133,14 @@ public class CreateUserPage {
 		 select.click();
 	}
 	
-	public void uploadImage(String link)
+	public void uploadImg(String loc)
 	{
 		
 		//Actions ob = new Actions(driver);
 		//ob.moveToElement(uploadimage).click().build().perform();
-		uploadimage.sendKeys(link);
+		//uploadimage.sendKeys(link);
+		
+		UploadImage.uploadImage(driver, uploadimage, loc);
 		
 		}
 	

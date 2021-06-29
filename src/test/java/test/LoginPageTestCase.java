@@ -5,12 +5,14 @@ import java.io.IOException;
 
 
 import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.Test;
 
 import pages.LoginPage;
 
 
 public class LoginPageTestCase extends AppSetup {
+	
+	
 	
 	@BeforeTest
 	public void loginTest() throws InterruptedException, IOException
@@ -20,6 +22,15 @@ public class LoginPageTestCase extends AppSetup {
 		loginPage.enterPassword("123456");
 		loginPage.clickSignInButton();
 	}
+	
 			
+	
+		
 
+	
 }
+
+
+
+
+

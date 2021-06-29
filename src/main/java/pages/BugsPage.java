@@ -18,9 +18,9 @@ WebDriver driver;
 	@FindBy(xpath="//a[text()='New Bugs']")
 	public WebElement newbugsTab;
 	
-	public void clickNewBug() throws InterruptedException
+	public void clickNewBug() 
 	{
 		newbugsTab.click();
-		Thread.sleep(5000);
+		
 	}
 }

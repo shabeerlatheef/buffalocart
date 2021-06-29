@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import pages.FileManagerPage;
 import pages.HomePage;
 
-public class FileManagerTestCase extends LoginPageTestCase {
+public class FileManagerTestCase extends AppSetup {
 	
 	
 	@Test

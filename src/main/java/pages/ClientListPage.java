@@ -30,6 +30,9 @@ WebDriver driver;
 	@FindBy(xpath="//select[@name='DataTables_length']")
 	public WebElement select;
 	
+	@FindBy(xpath="//a[text()='Client List']")
+	public WebElement clientList;
+	
 		
 	//(//a[text()='Next']//parent::li)/preceding-sibling::li[1]
 	
@@ -43,7 +46,7 @@ WebDriver driver;
 	
 	public void clientList()
 	{
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		
 		String parentWindow = driver.getWindowHandle();
 		//System.out.println(parentWindow);
 		List<WebElement> clients = driver.findElements(By.xpath("//a[contains(text(),'Obsqura')]"));
