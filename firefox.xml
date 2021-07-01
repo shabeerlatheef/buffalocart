@@ -6,10 +6,7 @@
 
     <classes>
       <class name="test.ClientPageTestCase"/>
-      <class name="test.UserPageTestCase"/>
-      <class name="test.BugPageTestCase"/>
-      <class name="test.FileManagerTestCase"/>
-      <class name="test.BaseSetup"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

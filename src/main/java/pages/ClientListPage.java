@@ -52,7 +52,11 @@ WebDriver driver;
 		List<WebElement> clients = driver.findElements(By.xpath("//a[contains(text(),'Obsqura')]"));
 		for (WebElement client:clients)
 		{
-			System.out.println("parent window client name: " +client.getText());
+			String parentclient = client.getText();
+			System.out.println("parent window client name: " +parentclient);
+			
+			
+			
 			if(client.getText().contains("Obsqura"))
 			{
 				//client.click();
@@ -67,9 +71,12 @@ WebDriver driver;
 				    	driver.switchTo().window(i);
 				    	//System.out.println(driver.getCurrentUrl());
 				        WebElement clientname = driver.findElement(By.xpath("//div[@class='col-md-6']//div[@class='col-md-6']"));
-						System.out.println("Client name: "+clientname.getText());
+						String childclient = clientname.getText();
+				        System.out.println("Client name: "+childclient);
 						driver.close();
 						//  System.out.println("Close child window browser");
+						
+						
 				       }
 					}			
 				}

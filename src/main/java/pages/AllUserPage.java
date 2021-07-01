@@ -30,19 +30,20 @@ WebDriver driver;
 	
 	
 
-	public void searchname(String searchname) throws InterruptedException {
-		Thread.sleep(5000);
+	public void searchname(String searchname) 
+	{
+		
 		searchuser.sendKeys(searchname);
-		Thread.sleep(5000);
+		
 	}
 
 
 
 	public void deletebutton() throws InterruptedException {
 		delete.click();
-		Thread.sleep(5000);
+		
 		deleteconfirm.click();
-		Thread.sleep(5000);
+		
 		deletesuccess.isDisplayed();
 		
 		System.out.println("user Deleted " +deletesuccess.isDisplayed());

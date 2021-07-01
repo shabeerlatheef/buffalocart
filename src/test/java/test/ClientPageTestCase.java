@@ -2,6 +2,7 @@ package test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import pages.ClientListPage;
 import pages.HomePage;
@@ -17,8 +18,12 @@ public class ClientPageTestCase extends AppSetup{
 		HomePage clientmenu = new HomePage(driver);
 		
 		clientmenu.clientClick();
-		
-		//Assert.assertEquals(client, clientname);
+		SoftAssert softAssertion= new SoftAssert();
+		String expectedTitle = "https://erp.buffalocart.com/admin/client/manage_client";
+        String originalTitle = driver.getCurrentUrl();
+        Assert.assertEquals(originalTitle, expectedTitle);
+        
+        softAssertion.assertEquals(originalTitle, expectedTitle);
 		
 		ClientListPage client = new ClientListPage(driver);
 		client.select100();

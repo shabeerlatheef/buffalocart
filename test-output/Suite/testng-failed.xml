@@ -4,36 +4,15 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.BugPageTestCase">
-        <methods>
-          <include name="createNewBug"/>
-          <include name="browsersetup"/>
-          <include name="tearDown"/>
-          <include name="appsetup"/>
-          <include name="quit"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- test.BugPageTestCase -->
-      <class name="test.UserPageTestCase">
-        <methods>
-          <include name="userTest"/>
-          <include name="browsersetup"/>
-          <include name="tearDown"/>
-          <include name="appsetup"/>
-          <include name="deleteuser"/>
-          <include name="quit"/>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- test.UserPageTestCase -->
-      <class name="test.FileManagerTestCase">
+      <class name="test.ClientPageTestCase">
         <methods>
           <include name="browsersetup"/>
           <include name="tearDown"/>
           <include name="appsetup"/>
-          <include name="Filemanger"/>
           <include name="quit"/>
+          <include name="clientsearch"/>
         </methods>
-      </class> <!-- test.FileManagerTestCase -->
+      </class> <!-- test.ClientPageTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

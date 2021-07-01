@@ -2,6 +2,7 @@ package test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -49,7 +50,7 @@ WebDriver driver;
 	 	    capabilities.setCapability("marionette",true);  
 	 	    driver= new FirefoxDriver(capabilities);
 		}
-		
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 	}
 	
 	@AfterSuite
@@ -66,7 +67,7 @@ WebDriver driver;
 		{
 			TakesScreenshot takescreenshot=(TakesScreenshot)driver;
 			File screenshot=takescreenshot.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(screenshot, new File("C:\\Users\\91773\\eclipse-workspace\\Buffalocart\\fail_screenshot"));
+			FileUtils.copyFile(screenshot, new File("C:\\Users\\91773\\eclipse-workspace\\Buffalocart\\screenshot"));
 		}
 		else if(ITestResult.SUCCESS==result.getStatus())
 		{

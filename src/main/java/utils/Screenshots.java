@@ -14,7 +14,7 @@ public class Screenshots {
         try {
             TakesScreenshot tk = ((TakesScreenshot)driver);
             File file = tk.getScreenshotAs(OutputType.FILE);
-            File destFile  = new File(name+".png");
+            File destFile  = new File("C:Users\\91773\\eclipse-workspace\\Buffalocart\\screenshot" +name+".png");
             FileUtils.copyFile(file,destFile);
         }
         catch (Exception e) {
